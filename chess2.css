@@ -1,0 +1,81 @@
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #D7CFC2;
+  }
+
+
+h1 {
+    text-align: center;
+}
+.white {
+    background-color: #D3C7B9;
+}
+
+.black {
+    background-color: #998779;
+}
+
+.chessboard .number{
+    border-style: none;
+}
+
+.chessboard .number:hover{
+    background-color: #D7CFC2;
+    transition: none;
+    color:black;
+}
+
+.chessboard td, th {
+    border-style: double;
+    border-color: black;
+    border-radius: 4px;
+    border-width: 0.005em;
+}
+
+.chessboard { 
+    border-spacing: 0; 
+    border-collapse: collapse; 
+}
+
+.chessboard th, td { 
+    border: none; 
+    width: 80px; 
+    height: 80px; 
+    text-align: center;
+    font-size: 35px;
+ }
+
+
+.chessboard td:hover {
+    background-color: white;
+    color: #b58863;
+    transition: all 0.25s ease;
+}
+.chessboard .bl:hover::after { 
+    content: attr(data-name);
+    position:absolute;
+    color: white;
+    background-color: black;  
+    padding: 0.8%;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: all 0.25s ease;
+ }
+
+ .chessboard .wh:hover::after {
+    content: attr(data-name);
+    position:absolute;
+    color: white;
+    background-color: black;  
+    padding: 0.8%;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: all 0.25s ease;
+ }
+
+
